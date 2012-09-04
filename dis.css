@@ -1,0 +1,114 @@
+body
+{
+	display:block;
+	position:absolute;
+	background-color:#F6EFFC;
+	width:100%;
+	height:100%;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+}
+
+.cabecera
+{
+	display:block;
+	position:absolute;
+	margin-top:0;
+	margin-left:0;
+	width:100%;
+	height:100px;
+	background-color:#222;
+}
+
+.titulo
+{
+	text-align:center;
+	margin-top:40px;
+	color:#B8AFB8;
+}
+
+.reg
+{
+	display:block;
+	float:left;
+	width:400px;
+	height:300px;
+	margin-top:110px;
+	margin-left:10px;
+	background-color:#BFEFEF;
+	-webkit-box-shadow: 5px 5px 2px 2px rgba(80, 80, 80, 0.6);
+	box-shadow: 5px 5px 2px 2px rgba(80, 80, 80, 0.6);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.tit_reg
+{
+	padding-left:70px;
+	padding-top:2px;
+	color:#555;
+}
+
+.registro li 
+{
+	display:block;
+	padding-top:15px;
+	padding-left:10px;
+}
+
+.login
+{
+	display:block;
+	float:right;
+	width:250px;
+	height:120px;
+	margin-top:110px;
+	margin-right:10px;
+	background-color:#ABE;
+	opacity:0.7;
+	-webkit-box-shadow: 5px 5px 2px 2px rgba(80, 80, 80, 0.6);
+	box-shadow: 5px 5px 2px 2px rgba(80, 80, 80, 0.6);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.login_admin li
+{
+	
+	padding-top:5px;
+	margin-left:0px;
+}
+
+footer
+{
+	display:block;
+	margin-top:500px;
+	width:98%;
+	height:50px;
+	margin-left:1%;
+}
+
+.buscar
+{
+	display:block;
+	float:left;
+	width:270px;
+	height:80px;
+	margin-top:250px;
+	margin-left:30px;
+	background-color:#DDD;
+	opacity:0.7;
+	-webkit-box-shadow: 5px 5px 2px 2px rgba(80, 80, 80, 0.6);
+	box-shadow: 5px 5px 2px 2px rgba(80, 80, 80, 0.6);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.busq
+{
+	padding-top:5px;
+	padding-left:10px;
+	margin-left:0px;
+}
