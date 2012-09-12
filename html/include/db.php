@@ -84,7 +84,8 @@ class phpDB
             $this->RollbackTrans(); // rollback transaction before closing
             $closed = pg_close( $this->connectionID );
             return $closed;
-        } else {
+        } 
+		else {
             // connection does not exist
             return null;
         }
