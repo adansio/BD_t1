@@ -1,0 +1,15 @@
+
+Tarea1 Bases de Datos
+UTFSM
+
+index.php
+dis.css		->Prototipo de interfaz express
+
+postreSQL/ 	->Implementacion de la base de datos con creacion de tablas y Triggers
+
+html/
+	-handlers/	->Archivos de comunicacion con la base de datos, modelo de negocio
+	-include/ 	->Archivos de configuracion con la base de datos
+	-...		->Modelo de presentacion
+
+11/09/2012	-V2-
