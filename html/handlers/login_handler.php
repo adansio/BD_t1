@@ -5,7 +5,6 @@ require_once("../include/db.php"); # Permite la comunicación con la bd
  $db = new phpDB(); # La variable $db guarda la referencia a la BD
  $db->connect();
 
- # Se hacen distintas cosas dependiendo del valor del parámetro "action" #
    if( $_GET['action'] == 'login' ) {
     $query = "SELECT * FROM administrador WHERE username = $1 and passwd = $2";
     $db->exec($query, array($_POST['username'], $_POST['password']));

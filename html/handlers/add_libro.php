@@ -11,7 +11,7 @@
 	$db3 = new phpDB();
 	$db3->connect(); 	//operaciones sobre categoria
 
-	# Se hacen distintas cosas dependiendo del valor del parámetro "action" #
+	
 	if( $_GET['action'] == 'add' ) {
 	
 		$_POST["prestado"]="FALSE";

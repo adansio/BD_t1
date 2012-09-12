@@ -13,7 +13,7 @@
 	if ( $_GET['action'] == 'devolver' )
 	{
 		$ses = $_SESSION['user']->id;
-		$fecha = strftime("%Y-%m-%d %H:%M:%S",time() );
+		$fecha = strftime("%Y-%m-%d %H:%M:%S",time());
 		$devuelto = "TRUE";
 
 		$db1->exec('SELECT fecha_prestamo FROM prestamo WHERE alumno_rut= $1 AND copia_libro_numero= $2 AND copia_libro_libro_id=$3', array( $_POST['rut'], $_POST['copia_libro'], $_POST['id']) );

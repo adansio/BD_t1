@@ -11,7 +11,7 @@
 	if( $_GET['action'] == 'prestar' )
 	{	
 		$ses = $_SESSION['user']->id;
-		$fecha = strftime("%Y-%m-%d %H:%M:%S", time() );
+		$fecha = strftime("%Y-%m-%d %H:%M:%S", time());
 		$devuelto = "FALSE";
 
 		//obtencion de id segun nombre del libro
