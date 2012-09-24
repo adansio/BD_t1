@@ -1,0 +1,61 @@
+Bases de datos - ILI239
+Tarea #1 - Libreria USM "Una Libreria de calidad para todos"
+-------------------------------------------------------------
+
+Nombres:	Paul Boedeker
+		Adan Morales
+		Sebastian Velasquez		
+
+Supuestos
+
+-	El ingreso a la pagina web es http://tareas.inf.utfsm.cl/~bd22 la cual despliega la pagina index.php
+	Aca aparecen dos menús, para ingreso de administrador y busqueda general.
+
+-	En el caso del administrador este debe existir previamente en la base de datos.
+	Existe un maximo de ingreso de 100 caracteres en ambos campos en el menu del administrador.
+
+-	En Busqueda general se puede realizar esta por los campos autor, código, titulo y descripción, una vez
+	que se ingresa un criterio de busqueda se despliega una lista con los datos relevantes del libro
+	en particular, en caso que el criterio de busqueda no coincida con ninguno de los criterios en la base
+	de datos, no se desplegara información alguna.
+	El codigo del libro corresponde al id en el cual el libro se ha ingresado a la base de datos.
+
+-	En caso de haber ingresado al sistema como administrador se despliega un menú con los sigutientes
+	items:
+
+	Agregar Alumno:
+	Se deben ingresar los datos solicitados con *, en caso de no complir con alguno de ellos, se retorna a
+	la misma página, y se muestra que ha faltado algún campo.
+	En caso satisfactorio el alumno es ingresado a la base de datos del sistema de biblioteca.
+	En caso que el rut no esté correcto se devuelve un mensaje expresando lo anterior.
+
+	Agregar Libro:
+	Al igual que el item anterior, se deben ingresar los campos solicitados, y en caso que falte alguno
+	se muestra un mensaje pidiendo el correcto ingreso de estos.
+	Los datos ingresados "deben ser los correctos", en general a modo de norma, todos los caracteres con
+	minúsculas y los espacios serán realizados con guiones bajos (_).
+	EL numero de copia es responsabilidad del administrador entregarselo, y para un mejor orden, que
+	este sea correlativo en cuanto a la existencia de un mismo ejemplar anterior.
+	
+	Prestar Libro:
+	Se despliega un menú con el ingreso del rut, este rut debe ser real (se comprobará), y este debe existir
+	en la base de datos; luego se despliega una barra con todos los libros disponibles para el prestamo.
+	Será responsibilidad del administrador ingresar correctamente el libro solicitado, ademas de que el valor 
+	del del numero de copia sea elcorrecto, ya sea, uno existente y/o que esté en stock.
+
+	Devolucion de Libro:
+	Se despliega un menú para ingreso de rut de un alumno existente en la base de datos, "sin" el digito 
+	verificador, ya que luego se mostraran los libros que este usuario tiene a su nombre.
+	En caso de que el rut no sea correcto o no exista en la base de datos no se mostrará ningún libro 
+	para su devolucion.
+	Será Responsabilidad del administador ingresar el numero de copia correspondiente para la devolución.
+	No se Logró impementar lo referente a la deuda.
+
+	Buscar Libro:
+	Similar que en la busqueda general, esta debe tener al menos un campo escrito, y una vez que se hace
+	click en buscar, se despliega una lista con los resultados obtenidos con la diferencia que al
+	administrador se le muestran las opciones de prestar y devolver, enviandolo a los menús correspondientes
+	descritos anteriormente.
+
+	Salir:
+	Cierra la sesion actual del administrador, y devuelve al index.php.
