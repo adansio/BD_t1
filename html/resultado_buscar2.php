@@ -21,7 +21,7 @@
     <th>Titulo del libro</th>
     <th>Descripcion</th>
     <th>Categoria</th>
-    <th>Stock</th>
+    <th>Stock</t>
   </thead>
   <tbody>
 
@@ -38,22 +38,20 @@ if($db->fobject() != NULL)
      <td class="td4"><? echo $db->fobject()->descripcion; ?></td>
      <td class="td5"><? echo $db->fobject()->nombre; ?></td>
      <td class="td6"><? echo $db->fobject()->stock; ?></td>
-     <td class="td7"><a href="devolucion_libro.php?id=<? echo $db->fobject()->id; ?>">Devolver</a></td>
-     <td class="td8"><a href="prestar_libro.php?id=<? echo $db->fobject()->id; ?>">Prestar</a></td>
 </tr>
 
 
 <?
   } while($db->nextRow());
 }
-else echo "Nose encontraron relaciones";
+else echo "No se encontraron relaciones";
 ?>
  
 <!--</ul>-->
  </tbody>
 </table>
 <div class="regresar">
-	<br><br><br><br><br><br><a href='buscar_libro.php'>VOLVER A LA BUSQUEDA </a></br></br></br></br></br>
+	<br><br><a href='login.php'>VOLVER A LA BUSQUEDA </a></br></br>
 </div>
 <?
 	include('include/footer.php');

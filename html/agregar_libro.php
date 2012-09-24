@@ -4,44 +4,59 @@ include('include/header.php');
 
 ?>
 
- <?
-    if (isset($_GET['success'])) {
-?>
-	<p>LIBRO AGREGADO!!</p>
-	<br><a href='agregar_libro.php'>VOLVER A AGREGAR </a></br>
-	<br><a href='menu_admin.php'>VOLVER AL MENU </a></br>
-<?
-}
-?>
-	<p>Agregar Libro</p>
+<header class="headaddlibro">
+	<div class="titaddlibro"><h4>Agregar Libro</h4></div>
+</header>
 
-	<form action="handlers/add_libro.php?action=add" method="POST">
+<div class="opc2">
+
+<?
+	if(isset($_GET['incomp'])=='true') { 
+?>
+	<p>Campo Incompleto</p>
+<?
+    }
+	else if(isset($_GET['nonum'])=='true') {
+?>
+	<p>Numero de copia invalido</p>
+<?
+	}
+	else if (isset($_GET['success'])=='true') {
+?>
+		<p>LIBRO AGREGADO</p>
+		<br><a href='menu_admin.php'>VOLVER AL MENU </a></br>
+<?
+	}
+?>
+</div>
+
+	<form action="handlers/add_libro.php?action=add" method="POST" class="maddlibro">
 	<p>
 		<label for="titulo">Titulo</label>
-		<input type="text" name="titulo"> *
+		<input type="text" name="titulo" maxlength="200"> *
 	</p>
 	<p>
 		<label for="autor">Autor</label>
-		<input type="text" name="autor"> *
+		<input type="text" name="autor" maxlength="200"> *
 	</p>
 	<p>
 		<label for="descripcion">Descripcion</label>
-		<input type="text" name="descripcion">
+		<input type="text" name="descripcion" maxlength="2000">
 	</p>
 	<p>
 		<label for="categoria">Categoria</label>
-		<input type="text" name="categoria"> *
+		<input type="text" name="categoria" maxlength="200"> *
 	</p>
 	<p>
 		<label for="num_copia">Numero de copia</label>
-		<input type="number" name="num_copia"> *
+		<input type="number" name="num_copia" size="5" maxlength="5"> *
 	</p>
 	<p>
 	    <input type="submit" value="Enviar">
 	</p>
-	
+	<p><h5> * Datos Obligatorios <h5></p> 
+
 	</form>
-	<p><h5> * Datos Requeridos <h5></p> 
 	<br><a href='menu_admin.php'>VOLVER AL MENU </a></br>
 <?
 	include('include/footer.php');
