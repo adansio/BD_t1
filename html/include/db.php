@@ -84,8 +84,7 @@ class phpDB
             $this->RollbackTrans(); // rollback transaction before closing
             $closed = pg_close( $this->connectionID );
             return $closed;
-        } 
-		else {
+        } else {
             // connection does not exist
             return null;
         }
@@ -114,7 +113,7 @@ class phpDB
      *  Recuperar el último error levantado.
      *  @return [String] Error.
      */
-    function errorMsg()
+    function errorMsg( )
     {
         if ( $this->connectionID == "-1" ) {
             switch ( $this->errorCode ) {
